@@ -4,7 +4,7 @@
 
 ### Первый - список всех ЖК в API
 
-пример: https://example.com/projects
+пример URL: `https://example.com/projects`
 
 Структура JSON:
 
@@ -26,7 +26,7 @@
 
 Должен в качестве параметра принимать идентификатор ЖК.
 
-пример: https://example.com/project?project_id=50
+пример URL: `https://example.com/project?project_id=50`
 
 Структура JSON:
 
