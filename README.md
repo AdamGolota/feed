@@ -4,7 +4,7 @@
 
 Для осуществления пакетной загрузки данных о квартирах, нужно предоставить API из двух URL, по которым постоянно доступны актуальные данные в JSON-формате.
 
-### Первый - список всех ЖК в API
+### Первый - список всех доступных ЖК
 
 пример URL: `https://example.com/projects`
 
@@ -20,7 +20,7 @@
 ]
 ```
 
-(1) Идентификатор ЖК в Вашем API. Любая уникальная строка. Не должен меняться.
+(1) Идентификатор ЖК в Вашей системе. Любая уникальная строка. Не должен меняться.
 
 (2) Название ЖК.
 
@@ -28,38 +28,31 @@
 
 Должен в качестве параметра принимать идентификатор ЖК.
 
-пример URL: `https://example.com/project?project_id=12`
+пример URL: `https://example.com/project-units?project_id=12`
 
 Структура JSON:
 
 ```
-{
-    "blocks": [ (1)
-        {
-            "name": string, (2)
-            "units": [ (3)
-                {
-                    "area": number, (4)
-                    "flat_number": string | null, (5)
-                    "floor": number, (6)
-                    "id": string, (7)
-                    "layout_url": string, (8)
-                    "price": number, (9)
-                    "room_count": number, (10)
-                    "status": 'sold' | 'booked' | 'available', (11)
-                    "unit_type": 'flat' | 'splithouse' | 'quadrohouse' | 'cottage' | 'penthouse' | 'townhouse' | 'duplex', (12)
-                },
-                ... другие квартиры
-            ]
-        },
-        ... другие блоки
-    ]
-}
+[
+    {
+        "area": number, (4)
+        "block_name": string, (1, 2)
+        "flat_number": string | null, (5)
+        "floor": number, (6)
+        "id": string, (7)
+        "layout_url": string, (8)
+        "price": number, (9)
+        "room_count": number, (10)
+        "status": 'sold' | 'booked' | 'available', (11)
+        "unit_type": 'flat' | 'splithouse' | 'quadrohouse' | 'cottage' | 'penthouse' | 'townhouse' | 'duplex', (3, 12)
+    },
+    ... другие квартиры
+]
 ```
 
 Пример данных с заполненными полями можно найти в файле feed-example.json в этом репозитории.
 
-(1) Грубо говоря, блоки — это дома ЖК.
+(1) Грубо говоря, блоки — это отдельные дома в комлексе.
 
 (2) Название блока. Примеры: "Дом 1", "Блок А", "Дом 1, секция 2".
 
