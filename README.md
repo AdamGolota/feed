@@ -36,7 +36,7 @@
 [
     {
         "area": number, (4)
-        "block_name": string, (1, 2)
+        "block_name": string | null, (1, 2)
         "flat_number": string | null, (5)
         "floor": number, (6)
         "id": string, (7)
