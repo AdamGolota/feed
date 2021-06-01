@@ -44,7 +44,7 @@
         "price": number, (9)
         "room_count": number, (10)
         "status": 'sold' | 'booked' | 'available', (11)
-        "unit_type": 'flat' | 'splithouse' | 'quadrohouse' | 'cottage' | 'penthouse' | 'townhouse' | 'duplex', (3, 12)
+        "unit_type": 'flat' | 'splithouse' | 'quadrohouse' | 'cottage' | 'penthouse' | 'townhouse' | 'duplex', (12)
     },
     ... другие квартиры
 ]
@@ -53,8 +53,6 @@
 Пример данных с заполненными полями можно найти в файле feed-example.json в этом репозитории.
 
 (1) Грубо говоря, блоки — это отдельные дома в комлексе. Примеры названия блока: "Дом 1", "Блок А", "Дом 1, секция 2".
-
-(3) unit - жилая единица недвижимости. Обычно это квартира, поэтому далее для упрощения будем называть их просто квартирами.
 
 (4) Площадь квартиры.
 
