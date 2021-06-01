@@ -1,22 +1,14 @@
 [
     {
-        "blocks": [
-            {
-                "name": "Дом 1, секция 3",
-                "units": [
-                    {
-                        "area": 70.4,
-                        "flat_number": "2a",
-                        "floor": 1,
-                        "id": "501166c6-6a6b-11e9-a82f-00155d101f3a",
-                        "layout_url": "https://www.mrktx.com/wp/wp-content/uploads/2018/07/SPF_Layout-1.jpg",
-                        "unit_type": "flat",
-                        "price": 23936000,
-                        "room_count": 2,
-                        "status": "available"
-                    }
-                ]
-            }
-        ]
+        "area": 70.4,
+        "block_name": "Дом 1, секция 3",
+        "flat_number": "2a",
+        "floor": 1,
+        "id": "501166c6-6a6b-11e9-a82f-00155d101f3a",
+        "layout_url": "https://www.mrktx.com/wp/wp-content/uploads/2018/07/SPF_Layout-1.jpg",
+        "unit_type": "flat",
+        "price": 23936000,
+        "room_count": 2,
+        "status": "available"
     }
 ]
